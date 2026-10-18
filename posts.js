@@ -9,7 +9,7 @@ const publicaciones = [
   {
     id: "02en",
     titulo: "Factorizacion I",
-    archivo: "Factorizacion_I.js",
+    archivo: "entradas/Factorizacion_1.js",
     fecha: "2026-10-15",
     resumen: "término común, trinomio cuadrado perfecto y diferencia de cuadrados."
   }
