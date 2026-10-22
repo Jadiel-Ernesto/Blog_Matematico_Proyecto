@@ -12,5 +12,12 @@ const publicaciones = [
     archivo: "entradas/Factorizacion_1.js",
     fecha: "2026-10-15",
     resumen: "término común, trinomio cuadrado perfecto y diferencia de cuadrados."
+  },
+  {
+    id: "03in",
+    titulo: "Factorizacion 2",
+    archivo: "entradas/Factorizacion_2.js",
+    fecha: "2026-10-22",
+    resumen: "término común, trinomio cuadrado perfecto y diferencia de cuadrados."
   }
 ];
