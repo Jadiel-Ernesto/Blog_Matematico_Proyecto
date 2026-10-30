@@ -19,5 +19,12 @@ const publicaciones = [
     archivo: "entradas/Factorizacion_2.js",
     fecha: "2026-10-22",
     resumen: "término común, trinomio cuadrado perfecto y diferencia de cuadrados."
+  },
+  {
+    id: "04fn",
+    titulo: "Ecuaciones de primer grado",
+    archivo: "entradas/EcuacionesPrimerGrado.js",
+    fecha: "2026-10-29",
+    resumen: "una igualdad matemática entre dos expresiones donde la incógnita (generalmente \(x\)) está elevada a la potencia 1 (\(ax + b = c\)).."
   }
 ];
