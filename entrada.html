@@ -5,35 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="titulo-pagina">Cargando... - Blog Matemático</title>
     <style>
+        /* Estilos copiados de index.html para unificar el diseño */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 20px auto;
-            padding: 10px;
-            color: #222;
+            background-color: #7092BE; /* Mismo fondo principal que index.html */
+            color: #0656c7;
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
         }
+
+        .container {
+            width: 100%; 
+            max-width: 680px;  /* Ancho de la tarjeta */
+            background: #ffffff; /* Fondo blanco de la tarjeta */
+            padding: 36px 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.05);
+            border: 1px solid #111a25;
+        }
+
         header {
             border-bottom: 2px solid #1a5276;
-            padding-bottom: 10px;
+            padding-bottom: 12px;
             margin-bottom: 20px;
         }
+
         .volver {
             color: #2980b9;
             text-decoration: none;
             font-weight: bold;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .volver:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #0f172a;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.5rem;
+        }
+
+        small {
+            font-size: 0.75rem;
+            color: #7f8c8d;
+        }
+
+        #contenido-entrada {
+            color: #334155;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <a href="index.html" class="volver">← Volver al índice</a>
-        <h1 id="titulo-entrada">Cargando título...</h1>
-        <small id="fecha-entrada"></small>
-    </header>
+    <main class="container">
+        <header>
+            <a href="index.html" class="volver">&larr; Volver al índice</a>
+            <h1 id="titulo-entrada">Cargando título...</h1>
+            <small id="fecha-entrada"></small>
+        </header>
 
-    <main id="contenido-entrada">
-        <p>Cargando contenido...</p>
+        <section id="contenido-entrada">
+            <p>Cargando contenido...</p>
+        </section>
     </main>
 
     <script src="posts.js"></script>

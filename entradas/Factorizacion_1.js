@@ -1,6 +1,5 @@
 contenidoEntrada = `
-<section>
-    <h2>Blog de Álgebra: Factorización I</h2>
+< section>
     <p>Factorizar es deshacer una multiplicación. Cuando nos dan un polinomio expresado como resultado final, el objetivo de la factorización es encontrar los factores que lo producen. A continuación, explicamos los tres casos fundamentales vistos en esta primera etapa.</p>
 
     <hr>
@@ -117,3 +116,4 @@ contenidoEntrada = `
         </tbody>
     </table>
 </section>`;
+
