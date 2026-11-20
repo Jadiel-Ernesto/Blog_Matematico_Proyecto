@@ -64,8 +64,16 @@ function pendiente(nombre, workshop) {
  *        (renglón i, columna j), igual que en la Semana 11.
  */
 function sumar(A, B) {
-  // TODO Workshop 1
-  pendiente('sumar', 'Workshop 1');
+  const [filas, columnas] = orden(A);
+  const resultante = crearMatriz(filas, columnas);
+
+  for (let f = 0; f < filas; f++) {
+    for (let c = 0; c < columnas; c++) {
+      resultante[f][c] = A[f][c] + B[f][c];
+    }
+  }
+
+  return resultante;
 }
 
 /**
@@ -73,8 +81,16 @@ function sumar(A, B) {
  * Misma condición que la suma: mismo orden.
  */
 function restar(A, B) {
-  // TODO Workshop 1
-  pendiente('restar', 'Workshop 1');
+  const [filas, columnas] = orden(A);
+  const resultante = crearMatriz(filas, columnas);
+
+  for (let f = 0; f < filas; f++) {
+    for (let c = 0; c < columnas; c++) {
+      resultante[f][c] = A[f][c] - B[f][c];
+    }
+  }
+
+  return resultante;
 }
 
 /**
@@ -82,8 +98,17 @@ function restar(A, B) {
  * En una imagen: k > 1 aclara, 0 < k < 1 oscurece.
  */
 function escalar(k, A) {
-  // TODO Workshop 1
-  pendiente('escalar', 'Workshop 1');
+  const [filas, columnas] = orden(A);
+  const resultante = crearMatriz(filas, columnas);
+
+  // Algoritmo para multiplicar elemento a elemento
+  for (let f = 0; f < filas; f++) {
+    for (let c = 0; c < columnas; c++) {
+      resultante[f][c] = k * A[f][c];
+    }
+  }
+
+  return resultante;
 }
 
 /**
@@ -93,8 +118,16 @@ function escalar(k, A) {
  * Ojo: el resultado NO tiene el mismo tamaño que A (salvo si es cuadrada).
  */
 function transpuesta(A) {
-  // TODO Workshop 1
-  pendiente('transpuesta', 'Workshop 1');
+  const [filas, columnas] = orden(A);
+  const resultante = crearMatriz(columnas, filas);
+
+  for (let f = 0; f < filas; f++) {
+    for (let c = 0; c < columnas; c++) {
+      resultante[c][f] = A[f][c];
+    }
+  }
+
+  return resultante;
 }
 
 /**
@@ -122,7 +155,13 @@ function multiplicar(A, B) {
 /** Determinante de una matriz 2 × 2:  ad − bc */
 function det2(T) {
   // TODO Workshop 2
-  pendiente('det2', 'Workshop 2');
+ // pendiente('det2', 'Workshop 2');
+ const a = [0][0];
+ const b = [0][1];
+ const c = [1][0];
+ const d = [1][1];
+ const determinante =  a*d - b * c;
+ return determinante;
 }
 
 /**
@@ -149,7 +188,14 @@ function transformar(x, y, T) {
  */
 function determinante(A) {
   // TODO Workshop 2
-  pendiente('determinante', 'Workshop 2');
+  //pendiente('determinante', 'Workshop 2');
+  const [filas, columnas] = orden(A);
+  if (filas == 2 && columnas == 2){
+    const determinante = det2(A);
+    return determinante;
+  }else{
+    pendiente('determinante', 'Workshop 2');
+  }
 }
 
 
